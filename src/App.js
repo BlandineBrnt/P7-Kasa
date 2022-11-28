@@ -1,29 +1,22 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+
 import Apropos from "./pages/Apropos";
-import Error404 from "./pages/Erreur404";
+import Erreur404 from "./pages/Erreur404";
 import FicheLogement from "./pages/FicheLogement";
-import { GlobalStyle } from "./styles/style";
-import datas from "./assets/data/data.json";
 import Home from "./pages/Home";
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <GlobalStyle />
-            <Header />
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/apropos" element={<Apropos />} />
-                <Route
-                    path="/fichelogement/:id"
-                    data={datas}
-                    element={<FicheLogement />}
-                />
-                <Route path="*" element={<Error404 />} />
+                <Route path="/Apropos" element={<Apropos />} />
+                <Route path="*" element={<Erreur404 />} />
+                <Route path="/logement/:id" element={<FicheLogement />} />
             </Routes>
         </BrowserRouter>
     );
 };
+
 export default App;
