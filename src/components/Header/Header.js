@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import logo from "../../../Header/LOGO.svg";
+import logo from "../../components/header/LOGO.svg";
 import "./header.css";
 
 function Header() {
@@ -22,7 +22,7 @@ function Header() {
                                     ? "active navLink"
                                     : "navLink"
                             }
-                            id="accueil"
+                            id="acceuil"
                         >
                             Accueil
                         </li>
