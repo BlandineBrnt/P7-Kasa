@@ -1,8 +1,8 @@
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { useState } from "react";
-import "./carrousel.css";
+import "./gallery.css";
 
-function Carrousel({ house }) {
+function Gallery({ house }) {
     //use state for slider based on index of the pictures
     const [current, setCurrent] = useState(0);
     const length = house.pictures.length;
@@ -54,4 +54,4 @@ function Carrousel({ house }) {
         </section>
     );
 }
-export default Carrousel;
+export default Gallery;

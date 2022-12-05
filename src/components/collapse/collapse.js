@@ -1,13 +1,13 @@
 import { useState, useRef } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import "./collapsible.css";
+import "./collapse.css";
 
-function Collapsible(props) {
+function Collapse(props) {
     const [isOpen, setIsOpen] = useState(false);
     const parentRef = useRef();
 
     return (
-        <div className="collapsible">
+        <div className="collapse">
             <button className="toggle" onClick={() => setIsOpen(!isOpen)}>
                 {props.label}
                 <FaChevronDown
@@ -34,4 +34,4 @@ function Collapsible(props) {
     );
 }
 
-export default Collapsible;
+export default Collapse;

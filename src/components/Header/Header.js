@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import logo from "../../components/header/LOGO.svg";
+import logo from "../../components/header/images/LOGO.svg";
 import "./header.css";
 
 function Header() {

@@ -1,7 +1,7 @@
 import houseList from "../../data/data";
 import { useParams, Navigate } from "react-router-dom";
-import Carrousel from "../../components/carrousel/carrousel";
-import Collapsible from "../../components/collapsible/collapsible";
+import Gallery from "../../components/gallery/gallery";
+import Collapse from "../../components/collapse/collapse";
 import "./housingInfo.css";
 import Tag from "../../components/tag/tag";
 import { FaStar } from "react-icons/fa";
@@ -20,7 +20,7 @@ function HousingInfo() {
 
     return index >= 0 ? (
         <main>
-            <Carrousel house={houseUpdated} />
+            <Gallery house={houseUpdated} />
 
             <section className="flexContainer">
                 <div className="title">
@@ -65,12 +65,12 @@ function HousingInfo() {
 
             <section className="collapsiblesHousing">
                 <div className="collapsibleWrap">
-                    <Collapsible label="Description">
+                    <Collapse label="Description">
                         <p>{houseUpdated.description}</p>
-                    </Collapsible>
+                    </Collapse>
                 </div>
                 <div className="collapsibleWrap">
-                    <Collapsible label="Equipements">
+                    <Collapse label="Equipements">
                         <ul>
                             {houseUpdated.equipments.map((component) => {
                                 return (
@@ -80,7 +80,7 @@ function HousingInfo() {
                                 );
                             })}
                         </ul>
-                    </Collapsible>
+                    </Collapse>
                 </div>
             </section>
         </main>
