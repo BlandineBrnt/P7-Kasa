@@ -1,6 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react"; //importation de react
+import ReactDOM from "react-dom/client"; //importation de react dom
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; //importation du routeur de react
 import reportWebVitals from "./reportWebVitals";
 
 import "./index.css";
@@ -11,7 +11,9 @@ import About from "./pages/about/about";
 import HousingInfo from "./pages/housingInfo/housingInfo";
 import ErrorPage from "./pages/error/error";
 
+//création de la racine react
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
     <Router>
         <Header />
