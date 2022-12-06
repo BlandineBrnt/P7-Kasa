@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 import "./collapse.css";
 
 function Collapse(props) {
@@ -10,7 +10,7 @@ function Collapse(props) {
         <div className="collapse">
             <button className="toggle" onClick={() => setIsOpen(!isOpen)}>
                 {props.label}
-                <FaChevronDown
+                <FaChevronUp
                     className={isOpen === false ? "isClose" : "isOpen"}
                 />
             </button>

@@ -70,15 +70,12 @@
         background: #ffffff;
         margin: 0;
     }
-    .cardContainer {
-        margin: 25px 0;
-    }
 }
 
 @media screen and (max-width: 500px) {
     .cardContainer {
-        width: 280px;
-        height: 280px;
+        width: 335px;
+        height: 255px;
     }
 
     .cardContainer h2 {
@@ -87,13 +84,13 @@
         font-weight: 500;
         font-size: 18px;
         line-height: 142.6%;
-        margin: 20px;
+        margin: 40px;
 
         position: absolute;
-        left: 6%;
+        left: -6%;
         right: 6%;
         top: 60%;
-        bottom: 20%;
+        bottom: 15%;
 
         color: #ffffff;
     }

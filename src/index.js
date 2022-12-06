@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client"; //importation de react dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; //importation du routeur de react
 import reportWebVitals from "./reportWebVitals";
 
-import "./index.css";
+import "./index.css"; //importation de l'index css
+
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Home from "./pages/home/home";
@@ -14,6 +15,7 @@ import ErrorPage from "./pages/error/error";
 //création de la racine react
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+//méthode react du render à partir du noeud racine
 root.render(
     <Router>
         <Header />

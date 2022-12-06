@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import houseList from "../../data/data";
+import data from "../../data/logements.json";
 import "./card.css";
 
 function Card() {
     // State
-    const cards = houseList;
+    const cards = data;
 
     //Comportement
 
