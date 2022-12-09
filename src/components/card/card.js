@@ -4,12 +4,8 @@ import data from "../../data/logements.json";
 import "./card.css";
 
 function Card() {
-    // State
     const cards = data;
 
-    //Comportement
-
-    //Render
     return (
         <section className="cardContainerWrap">
             {cards.map((card) => {
