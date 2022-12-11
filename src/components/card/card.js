@@ -1,29 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "../../data/logements.json";
 import "./card.css";
-
-function Card() {
-    const cards = data;
-
+const Card = ({ logement }) => {
     return (
-        <section className="cardContainerWrap">
-            {cards.map((card) => {
-                return (
-                    <Link
-                        to={`/housing/${card.id}`}
-                        key={card.id}
-                        title={card.title}
-                    >
-                        <article className="cardContainer">
-                            <img src={card.cover} alt={card.title} />
-                            <h2>{card.title}</h2>
-                        </article>
-                    </Link>
-                );
-            })}
-        </section>
+        <li className="card">
+            <Link to={"/housing/" + logement.id}>
+                <img src={logement.cover} alt="logement" />
+                <p>{logement.title}</p>
+            </Link>
+        </li>
     );
-}
+};
 
 export default Card;

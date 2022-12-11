@@ -18,3 +18,8 @@
     line-height: 142.6%;
     color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+    .tag {
+        font-size: 10px;
+    }
+}

@@ -36,8 +36,19 @@
     }
 
     .sectionIntro h1 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
         font-size: 24px;
+
+        color: #ffffff;
+
+        position: absolute;
+        top: 50%;
         left: 40%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        width: 227px;
     }
 
     .sectionIntro {

@@ -65,3 +65,22 @@
     top: 0%;
     left: 0%;
 }
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 255px;
+    }
+    .slide.active {
+        height: 255px;
+    }
+    .rightArrow {
+        font-size: 1.5rem;
+        right: 15px;
+    }
+    .leftArrow {
+        font-size: 1.5rem;
+        left: 15px;
+    }
+    .nbrImgages {
+        z-index: -2;
+    }
+}
